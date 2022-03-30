@@ -1,13 +1,11 @@
-﻿using System;
-
-namespace VirtualPay3dsAuth
+﻿namespace VirtualPay3dsAuth
 {
     class VirtualPay3dsAuthRequestBuilder
     {
         static void Main(string[] args)
         {
             //Your API user provided by VirtualPay
-            string merchantID = "Securcapsecurities";
+            string merchantID = "Securcap3";
             //[TradeNetworks].[Live].[CreditCardDepositCommunicationLogs].[CreditCardDepositRequestId]. The below is just a sample string formation. See the legacy sources for the exact algorhythm
             string requestID = DateTime.Now.ToString("HHmmddMMyy");
             string date = DateTime.Now.ToString("ddmmyy");
@@ -18,14 +16,14 @@ namespace VirtualPay3dsAuth
             string cardNumber = "4000000000001091";
             string expiry = "022022";
             string amount = "100";
-            //Replace with the 3DS Return URL of PROfit's Deposit Site, based on your environment (DEV2, QA2, ST, PROD)
+            //Replace with PROfit's Deposit Site the 3DS Return URL, based on your environment (DEV2, QA2, ST, QAPROD, PROD)
             string redirectUrl = "https://tnstoyanov.wixsite.com/payment-response";
-            //Replace with the callback handler URL of PROfit's Billing Server, based on your environment (DEV2, QA2, ST, PROD)
+            //Replace with PROfit's Billing Server the callback handler URL, based on your environment (DEV2, QA2, ST, QAPROD, PROD)
             string timeoutUrl = "https://db46a064326442f75c6172ae6772049a.m.pipedream.net";
             string currency = "USD";
             //As per ISO Alpha-3
-            string country = "BGR";
-            string city = "Nairobi";
+            string country = "SAU";
+            string city = "KSA";
             string cvv = "189";
             string postalCode = "1000";
             string stateCode = "";
