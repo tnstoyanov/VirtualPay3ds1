@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             //Your API user provided by VirtualPay
-            string merchantID = "Securcap3";
+            string merchantID = "Securcapsecurities";
             //[TradeNetworks].[Live].[CreditCardDepositCommunicationLogs].[CreditCardDepositRequestId]. The below is just a sample string formation. See the legacy sources for the exact algorhythm
             string requestID = DateTime.Now.ToString("HHmmddMMyy");
             string date = DateTime.Now.ToString("ddmmyy");
@@ -14,8 +14,8 @@
             string customerPhoneNumber = "359888123456";
             //Live cards only! There is no 3DS1 sandbox for this API
             string cardNumber = "4000000000001091";
-            string expiry = "022022";
-            string amount = "100";
+            string expiry = "122022";
+            string amount = "0.01";
             //Replace with PROfit's Deposit Site the 3DS Return URL, based on your environment (DEV2, QA2, ST, QAPROD, PROD)
             string redirectUrl = "https://tnstoyanov.wixsite.com/payment-response";
             //Replace with PROfit's Billing Server the callback handler URL, based on your environment (DEV2, QA2, ST, QAPROD, PROD)
