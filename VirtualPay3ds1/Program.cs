@@ -12,7 +12,6 @@
             string requestTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             string customerName = "Tony Stoyanov";
             string customerPhoneNumber = "359888123456";
-            //Live cards only! There is no 3DS1 sandbox for this API
             string cardNumber = "4000000000001091";
             string expiry = "122022";
             string amount = "0.01";
