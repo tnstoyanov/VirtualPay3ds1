@@ -10,7 +10,7 @@ namespace VirtualPay3dsAuth
             //Your API user provided by VirtualPay
             string merchantID = "Securcap3";
             //[TradeNetworks].[Live].[CreditCardDepositCommunicationLogs].[CreditCardDepositRequestId]. The below is just a sample string formation. See the legacy sources for the exact algorhythm
-            string requestID = DateTime.Now.ToString("HHmmddMMyy");
+            string requestID = DateTime.Now.ToString("HH-mm-ms");
             string date = DateTime.Now.ToString("ddmmyy");
             string requestTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             string customerName = "Tony Stoyanov";
